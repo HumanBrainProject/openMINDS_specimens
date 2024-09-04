@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage",
+  "_type": "/specimenPrep/SlicingDeviceUsage",
   "_extends": "/core/schemas/research/deviceUsage.schema.tpl.json",
   "required": [
     "sliceThickness",
@@ -9,20 +9,20 @@
     "device": {
       "_instruction": "Add the slicing device used.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/specimenPrep/SlicingDevice"
+        "/specimenPrep/SlicingDevice"
       ]
     },
     "oscillationAmplitude": {
       "_instruction": "Enter the oscillation amplitude of the blade from the slicing device during its use.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "/core/QuantitativeValue"
       ]
     },
     "sliceThickness": {
       "_instruction": "Enter the defined slice thickness during the use of this slicing device.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "/core/QuantitativeValue",
+        "/core/QuantitativeValueRange"
       ]
     },
     "slicingAngle": {
@@ -31,26 +31,26 @@
       "maxItems": 2,
       "_instruction": "Enter all slicing angles (intentional or unintentional) in relation to the slicing plane used during this activity.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/NumericalProperty"
+        "/core/QuantitativeValue",
+        "/core/NumericalProperty"
       ]
     },
     "slicingPlane": {
       "_instruction": "Add the anatomical plane that best describes the slicing direction of the tissue sample(s) during the use of this slicing device.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/AnatomicalPlane"
+        "/controlledTerms/AnatomicalPlane"
       ]
     },
     "slicingSpeed": {
       "_instruction": "Enter the defined slicing speed during the use of this slicing device.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "/core/QuantitativeValue"
       ]
     },
     "vibrationFrequency": {
       "_instruction": "Enter the defined vibration frequency during the use of this slicing device.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue"
+        "/core/QuantitativeValue"
       ]
     }
   }

@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/specimenPrep/CranialWindowPreparation",
+  "_type": "/specimenPrep/CranialWindowPreparation",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "constructionType"
@@ -8,7 +8,7 @@
     "constructionType": {
       "_instruction": "Add the construction type of the cranial window.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/CranialWindowConstructionType"
+        "/controlledTerms/CranialWindowConstructionType"
       ]
     },
     "dimension": {
@@ -20,19 +20,19 @@
     "input": {
       "_instruction": "Add the state of the subject which received the cranial window before this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/SubjectState"
+        "/core/SubjectState"
       ]
     },
     "output": {
       "_instruction": "Add the state of the subject which received the cranial window as a result of this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/SubjectState"
+        "/core/SubjectState"
       ]
     },
     "reinforcementType": {
       "_instruction": "Add the reinforcement type of the cranial window.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/controlledTerms/CranialWindowReinforcementType"
+        "/controlledTerms/CranialWindowReinforcementType"
       ]
     }
   }
