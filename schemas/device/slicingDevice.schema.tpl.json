@@ -1,4 +1,4 @@
 {
-  "_type": "/specimenPrep/SlicingDevice",
+  "_type": "SlicingDevice",
   "_extends": "/core/schemas/products/device.schema.tpl.json"
 }

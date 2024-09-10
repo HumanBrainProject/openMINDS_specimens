@@ -1,5 +1,5 @@
 {
-  "_type": "/specimenPrep/TissueSampleSlicing",
+  "_type": "TissueSampleSlicing",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "device"
@@ -8,15 +8,15 @@
     "device": {
       "_instruction": "Add the device used to slice the tissue sample.",
       "_linkedTypes": [
-        "/specimenPrep/SlicingDeviceUsage"
+        "SlicingDeviceUsage"
       ]
     },
     "input": {
       "_instruction": "Add the state of the specimen that was sliced during this activity.",
       "_linkedTypes": [
-        "/core/SubjectState",
-        "/core/TissueSampleCollectionState",
-        "/core/TissueSampleState"
+        "SubjectState",
+        "TissueSampleCollectionState",
+        "TissueSampleState"
       ]
     },
     "output": {
@@ -25,21 +25,21 @@
       "minItems": 1,
       "uniqueItems": true,
       "_linkedTypes": [
-        "/core/TissueSampleCollectionState",
-        "/core/TissueSampleState"
+        "TissueSampleCollectionState",
+        "TissueSampleState"
       ]
     },
     "temperature": {
       "_instruction": "Enter the temperature at which the tissue sample was sliced during the activity.",
       "_embeddedTypes": [
-        "/core/QuantitativeValue",
-        "/core/QuantitativeValueRange"
+        "QuantitativeValue",
+        "QuantitativeValueRange"
       ]
     },
     "tissueBathSolution": {
       "_instruction": "Add the chemical mixture used as bath solution during this activity.",
       "_linkedTypes": [
-        "/chemicals/ChemicalMixture"
+        "ChemicalMixture"
       ]
     }
   }

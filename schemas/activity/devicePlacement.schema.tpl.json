@@ -16,8 +16,8 @@
     "input": {
       "_instruction": "Add the state of the specimen that the device is being placed in or on during this activity.",
       "_linkedTypes": [
-        "/core/TissueSampleState",
-        "/core/SubjectState"
+        "TissueSampleState",
+        "SubjectState"
       ]
     },
     "output": {
@@ -26,14 +26,14 @@
       "uniqueItems": true,
       "_instruction": "Add all states of the specimen(s) that the device was placed in or on as a result of this activity.",
       "_linkedTypes": [
-        "/core/TissueSampleState",
-        "/core/SubjectState"
+        "TissueSampleState",
+        "SubjectState"
       ]
     },
     "targetPosition": {
       "_instruction": "Enter the anatomical target position for the placement of the device.",
       "_embeddedTypes": [
-        "/sands/AnatomicalTargetPosition"
+        "AnatomicalTargetPosition"
       ]
     }
   }

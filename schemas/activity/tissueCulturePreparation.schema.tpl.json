@@ -1,5 +1,5 @@
 {
-  "_type": "/specimenPrep/TissueCulturePreparation",
+  "_type": "TissueCulturePreparation",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "cultureMedium",
@@ -9,28 +9,28 @@
     "cultureMedium": {
       "_instruction": "Add the culture medium used during this tissue culture preparation.",
       "_linkedTypes": [
-        "/chemicals/ChemicalMixture"
+        "ChemicalMixture"
       ]
     },
     "cultureType": {
       "_instruction": "Add the cell culture type of the resulting tissue cell culture.",
       "_linkedTypes": [
-        "/controlledTerms/CellCultureType"
+        "CellCultureType"
       ]
     },
     "input": {
       "_instruction": "Add the state of the specimen before it was prepared as culture in this activity.",
       "_linkedTypes": [
-        "/core/TissueSampleState",
-        "/core/TissueSampleCollectionState",
-        "/core/SubjectGroupState",
-        "/core/SubjectState"
+        "TissueSampleState",
+        "TissueSampleCollectionState",
+        "SubjectGroupState",
+        "SubjectState"
       ]
     },
     "output": {
       "_instruction": "Add the state of the prepared tissue sample culture that resulted from this activity.",
       "_linkedTypes": [
-        "/core/TissueSampleState"
+        "TissueSampleState"
       ]
     }
   }
