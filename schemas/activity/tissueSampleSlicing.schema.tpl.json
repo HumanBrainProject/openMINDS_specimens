@@ -1,5 +1,5 @@
 {
-  "_type": "https://openminds.ebrains.eu/specimenPrep/TissueSampleSlicing",
+  "_type": "specimenPrep:TissueSampleSlicing",
   "_extends": "/core/schemas/research/experimentalActivity.schema.tpl.json",
   "required": [
     "device"
@@ -8,15 +8,15 @@
     "device": {
       "_instruction": "Add the device used to slice the tissue sample.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/specimenPrep/SlicingDeviceUsage"
+        "specimenPrep:SlicingDeviceUsage"
       ]
     },
     "input": {
       "_instruction": "Add the state of the specimen that was sliced during this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/SubjectState",
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState"
+        "core:SubjectState",
+        "core:TissueSampleCollectionState",
+        "core:TissueSampleState"
       ]
     },
     "output": {
@@ -25,21 +25,21 @@
       "minItems": 1,
       "uniqueItems": true,
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/core/TissueSampleCollectionState",
-        "https://openminds.ebrains.eu/core/TissueSampleState"
+        "core:TissueSampleCollectionState",
+        "core:TissueSampleState"
       ]
     },
     "temperature": {
       "_instruction": "Enter the temperature at which the tissue sample was sliced during the activity.",
       "_embeddedTypes": [
-        "https://openminds.ebrains.eu/core/QuantitativeValue",
-        "https://openminds.ebrains.eu/core/QuantitativeValueRange"
+        "core:QuantitativeValue",
+        "core:QuantitativeValueRange"
       ]
     },
     "tissueBathSolution": {
       "_instruction": "Add the chemical mixture used as bath solution during this activity.",
       "_linkedTypes": [
-        "https://openminds.ebrains.eu/chemicals/ChemicalMixture"
+        "chemicals:ChemicalMixture"
       ]
     }
   }
